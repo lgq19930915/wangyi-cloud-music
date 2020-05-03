@@ -107,3 +107,12 @@ export const requestSearch = (data) => {
     params: data
   })
 }
+// 歌词
+export const requestGetLrc = (id) => {
+  return axios({
+    url: baseUrl + "/lyric",
+    params: {
+      id: id
+    }
+  })
+}
